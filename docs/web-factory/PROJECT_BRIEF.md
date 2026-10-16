@@ -15,3 +15,10 @@ React + Vite, client-only. Light instrument dashboard, deep-teal navigation rail
 
 ## Validation limits
 Physical serial/BMS hardware not available to automated tests. A browser mock verifies browser API integration, not hardware or firmware safety. Frame protocol has no ACK or checksum in supplied GUI.
+
+## Release requirements — 2026-10-16
+- R7: Publish existing Lovable project publicly; verify actual HTTPS production URL. Browser still connects to local USB.
+- R8: Add bilingual official WCH macOS DMG, Windows official download page and macOS installation-guide links in connection settings. Use safe HTTPS anchors; install only when device is unrecognized.
+- R9: Arial sans-serif throughout, bold headings, regular body, tabular numerals. Preserve functionality and module layout.
+- R10: Light gray bottom region, white cards, thin light gray borders, dark gray text, cyan-blue buttons. Blue/green/purple/orange/red data palette; no speculative charts or energy readings.
+User reports local test succeeds; this is user-reported hardware validation, not an agent hardware test.

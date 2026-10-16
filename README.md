@@ -84,3 +84,8 @@ Lovable 编辑器：https://lovable.dev/projects/6133d5d1-f4d4-4cbb-b261-9b3b14a
 Lovable 预览：https://id-preview--6133d5d1-f4d4-4cbb-b261-9b3b14a11557.lovable.app
 
 当前状态：预览已核验，未公开发布，未配置 GitHub 双向同步。详情见 `docs/web-factory/LOVABLE_HANDOFF.md`。
+
+## 正式网站与驱动
+
+访问 https://federated-bms.lovable.app ，在电脑 Chrome / Edge 中选择 USB 串口并开始采集。网站云端托管，BMS 数据仍在当前浏览器处理。
+“连接设置”提供 WCH 官方 macOS 驱动、Windows 驱动页面及安装说明。已识别的串口无需重复安装。

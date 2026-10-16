@@ -127,6 +127,11 @@ export default function App() {
           <div className="settings-fields"><label>{t.baud}<select value={baud} disabled={state !== 'closed'} onChange={e => setBaud(Number(e.target.value))}>{[9600, 19200, 38400, 57600, 115200].map(rate => <option key={rate} value={rate}>{rate}</option>)}</select></label>
           <label>{t.format}<select value={length} disabled={state !== 'closed'} onChange={e => setLength(Number(e.target.value))}><option value={40}>{t.short}</option><option value={46}>{t.legacy}</option></select></label></div>
           <label className="checkbox"><input type="checkbox" checked={alternate} disabled={state !== 'closed'} onChange={e => setAlternate(e.target.checked)} />{t.alternate}</label><p className="field-hint">{t.alternateHint}</p>
+           <div className="driver-downloads" aria-labelledby="drivers-title"><h3 id="drivers-title">{t.drivers}</h3><p>{t.driverHint}</p><ul>
+             <li><a href="https://github.com/WCHSoftGroup/ch34xser_macos/raw/refs/heads/main/CH34xVCPDriver.dmg" target="_blank" rel="noopener noreferrer">{t.driverMac}</a></li>
+             <li><a href="https://www.wch.cn/downloads/CH341SER_EXE.html" target="_blank" rel="noopener noreferrer">{t.driverWindows}</a></li>
+             <li><a href="https://github.com/WCHSoftGroup/ch34xser_macos/blob/main/CH34X_DRV_INSTAL_INSTRUCTIONS.pdf" target="_blank" rel="noopener noreferrer">{t.driverInstructions}</a></li>
+           </ul></div>
           <div className="protocol-note"><h3>{t.protocol}</h3><p>{t.protocolHint}</p><p>{t.sourceHint}</p></div>
         </section>
         <section id="logs" className="panel log-panel" aria-labelledby="logs-title"><div className="section-title"><div><h2 id="logs-title">{t.logs}</h2><p>{t.frameCount}: <b>{count}</b></p></div><button className="quiet" onClick={() => setLogs([])}>{t.clearLog}</button></div><div className="log-output" tabIndex={0} aria-label={t.logs}>{logs.length ? <ol>{logs.map((log, i) => <li key={`${log.at}-${i}`}><time>{time(log.at)}</time><span>{t[log.key]}{log.detail ? ` · ${log.detail}` : ''}</span></li>)}</ol> : <p className="empty-log">{t.emptyLog}</p>}</div></section>

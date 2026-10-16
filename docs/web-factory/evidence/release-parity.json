@@ -1,0 +1,22 @@
+{
+  "src/App.jsx": {
+    "match": true,
+    "sha256": "1d2da10de75b8dce87eed6e21dabc314cda5c219f6b8cf3b5bb3bc551e140b0f"
+  },
+  "src/i18n.js": {
+    "match": true,
+    "sha256": "68b31ca08b9cf5546df528e3f02a306be74cfb04cc5d62419bfc43e60b8fb633"
+  },
+  "src/styles.css": {
+    "match": true,
+    "sha256": "f249de58af1fbcc2e820d524e5a8b23f1bb2b937de855c879a0e12ba94ab883c"
+  },
+  "src/protocol.js": {
+    "match": true,
+    "sha256": "d557eabc49d9ce7ad8dcf83544dcbe0808b0a75d47d5db881e36319dd9825aa6"
+  },
+  "src/serial.js": {
+    "match": true,
+    "sha256": "e224e33cb48bb1de53eae162887a151e82e42b681a2d3fea8ba740af4625517a"
+  }
+}

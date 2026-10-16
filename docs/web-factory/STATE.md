@@ -18,3 +18,16 @@ GITHUB PASS: main pushed; e883d1d app commit verified remotely.
 LOVABLE_PREVIEW PASS: exact five core files, browser smoke-tested; evidence/lovable-parity.json and LOVABLE_HANDOFF.md.
 GITHUB_TWO_WAY_SYNC NOT_STARTED: platform does not import existing repos.
 DEPLOYMENT NOT_STARTED: production is not published; preview exists.
+
+## Production release update — 2026-10-16
+User reports local hardware test passes and authorizes publishing the existing Lovable project. Add official driver links, Arial typography and light gray/white/cyan-blue dashboard styling. No telemetry cloud storage or remote gateway requested.
+IMPLEMENTATION IN_PROGRESS
+VISUAL IN_PROGRESS: previous screenshots STALE for typography/palette changes.
+QA IN_PROGRESS
+SECURITY IN_PROGRESS: Lovable Security view shows three High dependency indications (@tanstack/react-start 1.168.60, @tailwindcss/vite 4.3.3); refresh and investigate before production.
+DEPLOYMENT IN_PROGRESS: authorized, not yet published.
+
+## Final production release
+IMPLEMENTATION PASS; VISUAL PASS; QA PASS; SECURITY PASS within documented scope; DEPLOYMENT PASS.
+Production: https://federated-bms.lovable.app
+Current evidence and limitations: PRODUCTION_RELEASE.md. Prior deployment-not-started statements are historical.
