@@ -1,0 +1,17 @@
+
+> federated-bms@1.0.0 test:browser
+> playwright test
+
+
+Running 6 tests using 1 worker
+
+(node:77252) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/browser/app.spec.js:25:1 › English default, exclusive views, mode, deep links, keyboard and responsive layouts (1.9s)
+  ✓  2 tests/browser/app.spec.js:64:1 › 24S single controls send six commands, preserve state across navigation and await telemetry (7.1s)
+  ✓  3 tests/browser/app.spec.js:93:1 › 36S maps third pack, reports unknown MOS and preserves request state through views (1.1s)
+  ✓  4 tests/browser/app.spec.js:114:1 › write failure does not flip acquisition request (431ms)
+  ✓  5 tests/browser/app.spec.js:123:1 › unsupported browser and cancelled chooser never claim a connection (486ms)
+  ✓  6 tests/browser/app.spec.js:134:1 › 24S unknown and mixed MOS are disabled; unconfirmed action can be retried (6.5s)
+
+  6 passed (19.3s)

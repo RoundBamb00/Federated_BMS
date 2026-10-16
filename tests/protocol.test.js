@@ -66,3 +66,41 @@ test('all decoded fields match the original Python parser oracle', () => {
     for (const [oldKey, key] of Object.entries(mapping)) assert.deepEqual(actual[key], fixture.python[oldKey], key);
   }
 });
+
+for (const id of [1, 2, 3]) {
+  test(`36S board ${id} decodes 50 bytes without alternating IDs`, () => {
+    const raw = frame(50, id);
+    const parser = new FrameParser(50);
+    for (let split = 1; split < 50; split++) {
+      assert.deepEqual(parser.feed(raw.slice(0, split)), []);
+      assert.deepEqual(parser.feed(raw.slice(split)), [raw]);
+    }
+    const pack = parseFrame(raw, id);
+    assert.equal(pack.totalMv, 39666);
+    assert.equal(pack.currentA, -2);
+    assert.equal(pack.temp2, 26);
+    assert.equal(pack.dsgOn, null);
+    assert.equal(pack.chgOn, null);
+    const resolver = new PackResolver(true, 3);
+    assert.deepEqual([id, id].map(n => resolver.resolve(n)), [id, id]);
+    raw[34] = 255; raw[35] = 255;
+    assert.equal(parseFrame(raw, id).soc, null);
+  });
+}
+test('36S rejects foreign headers and requires all three packs for totals', () => {
+  const parser = new FrameParser(50);
+  assert.deepEqual(parser.feed(frame(50, 4)), []);
+  assert.throws(() => parseFrame(frame(50, 4), 1));
+  const p = parseFrame(frame(50), 1);
+  assert.equal(summarize({1:p, 2:p}, 3).totalMv, null);
+  assert.equal(summarize({1:p, 2:p, 3:p}, 3).totalMv, 118998);
+  assert.equal(summarize({1:p, 2:p, 3:{...p, soc:null}}, 3).soc, null);
+});
+test('36S decoded fields match 30 original Python parser oracle fixtures', () => {
+  const fixtures = JSON.parse(readFileSync(new URL('./source-parity-36.json', import.meta.url)));
+  const mapping = { pack_index:'packIndex',header_id:'headerId',cells_mv:'cellsMv',total_mv:'totalMv',soc:'soc',current_a:'currentA',temp1:'temp1',temp2:'temp2',max_mv:'maxMv',min_mv:'minMv',raw_len:'rawLen' };
+  for (const fixture of fixtures) {
+    const actual = parseFrame(Uint8Array.from(fixture.raw), fixture.raw[1]);
+    for (const [oldKey,key] of Object.entries(mapping)) assert.deepEqual(actual[key],fixture.python[oldKey],key);
+  }
+});

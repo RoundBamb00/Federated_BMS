@@ -89,3 +89,7 @@ Lovable 预览：https://id-preview--6133d5d1-f4d4-4cbb-b261-9b3b14a11557.lovabl
 
 访问 https://federated-bms.lovable.app ，在电脑 Chrome / Edge 中选择 USB 串口并开始采集。网站云端托管，BMS 数据仍在当前浏览器处理。
 “连接设置”提供 WCH 官方 macOS 驱动、Windows 驱动页面及安装说明。已识别的串口无需重复安装。
+
+## 24S / 36S update and sync repository
+
+Local code now supports both configurations. The Lovable-connected repository is https://github.com/RoundBamb00/federated-bms (hyphen), checked out at `/Users/cliffcedar/Desktop/BMS/SRC/Federated_BMS_Web`. This original underscore repository remains preserved. Future deployment edits should be made locally in the sync checkout. See `docs/web-factory/LOCAL_36S_UPDATE.md` for protocol, verification, and the outstanding GPT Image 2 logo gate.

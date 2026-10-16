@@ -31,3 +31,12 @@ DEPLOYMENT IN_PROGRESS: authorized, not yet published.
 IMPLEMENTATION PASS; VISUAL PASS; QA PASS; SECURITY PASS within documented scope; DEPLOYMENT PASS.
 Production: https://federated-bms.lovable.app
 Current evidence and limitations: PRODUCTION_RELEASE.md. Prior deployment-not-started statements are historical.
+
+## Navigation and controls correction — 2026-10-16
+User rejected combined long-page sections and clarified paired hardware buttons should be consolidated. User requests English default.
+Root cause: unconditional sections; .nav-main always highlighted, hover uses same treatment.
+IMPLEMENTATION IN_PROGRESS; VISUAL IN_PROGRESS; QA IN_PROGRESS; SECURITY IN_PROGRESS; DEPLOYMENT IN_PROGRESS. Previous UI evidence STALE for this change.
+Acceptance: exclusive monitor/settings/log views with one active menu; shared connection survives view changes; three single-action control groups with truthful request/telemetry states; default English with Chinese switch. Preserve protocol and official driver links.
+
+## Local-only workflow correction
+User requires local Codex editing and GitHub synchronization, and authorized a new sync repository while retaining this original repository. Synced local checkout: ../Federated_BMS_Web; GitHub RoundBamb00/federated-bms; application commit 2b69ece verified at both GitHub and Lovable. Functional implementation passed 23 tests plus six browser scenarios; original 36S GUI preserved. Logo remains BLOCKED pending verified GPT Image 2; no new production publish.

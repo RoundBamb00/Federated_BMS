@@ -2,7 +2,7 @@ export function frame(length = 40, id = 1) {
   const raw = new Uint8Array(length);
   const view = new DataView(raw.buffer);
   raw.set([0xaa, id]);
-  const count = length === 46 ? 15 : 12;
+  const count = length >= 46 ? 15 : 12;
   for (let i = 0; i < count; i++) view.setUint16(2 + i * 2, 3300 + i);
   let p = 2 + count * 2;
   view.setUint16(p, 39666); p += 2;
