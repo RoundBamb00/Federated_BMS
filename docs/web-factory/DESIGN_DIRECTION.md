@@ -1,0 +1,2 @@
+# Design direction
+Approved functional direction: local USB serial dashboard. Reversible visual choices: pale gray-green background, white instrument panels, deep teal rail and actions, tabular monospace measurements, visible borders, 44px controls. Preserve bilingual vocabulary, two 12S boards and 24S summary. Frontend-design is primary; ui-ux-pro-max contributes accessibility/responsive checks, React best practices limit dependencies. No new logo required. No stock imagery or external assets.

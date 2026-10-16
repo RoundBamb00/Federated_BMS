@@ -1,0 +1,30 @@
+
+> federated-bms@1.0.0 test
+> node --test tests/*.test.js
+
+✔ decode 40-byte source-compatible packet (1.472917ms)
+✔ 40-byte parser handles every split including AA split and final packet (0.77975ms)
+✔ 40-byte parser handles noise, coalescing and header-like payload (1.2485ms)
+✔ decode 46-byte source-compatible packet (0.084833ms)
+✔ 46-byte parser handles every split including AA split and final packet (0.30025ms)
+✔ 46-byte parser handles noise, coalescing and header-like payload (0.915833ms)
+✔ invalid frames rejected and missing voltages preserved (0.348083ms)
+✔ same-header alternation and explicit IDs match source (0.11575ms)
+✔ exact six hardware command bytes (0.419625ms)
+✔ 24S total requires both packs; missing is never zero (0.467834ms)
+✔ all decoded fields match the original Python parser oracle (0.755959ms)
+✔ user-selected port: reads bytes, writes only requested command, releases locks (7.647667ms)
+✔ cancelled chooser and open failure leave connection closed (0.419459ms)
+✔ unplug/read failure closes port and reports error (0.367333ms)
+✔ reject concurrent connect and commands during pending write/close (0.439375ms)
+✔ write failure rejects instead of reporting success (0.523625ms)
+✔ cleanup during pending chooser never leaves an open port (2.114833ms)
+✔ cleanup during pending open never leaves an open port (0.575042ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 71.188333

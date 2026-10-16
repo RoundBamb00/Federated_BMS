@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.venv/
+.idea/
+.DS_Store
+.env
+.env.*
+test-results/
+playwright-report/
+docs/web-factory/evidence/*.png

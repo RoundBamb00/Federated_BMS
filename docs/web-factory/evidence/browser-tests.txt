@@ -1,0 +1,13 @@
+
+> federated-bms@1.0.0 test:browser
+> playwright test
+
+
+Running 4 tests using 1 worker
+
+  ✓  1 tests/browser/app.spec.js:20:1 › empty dashboard, language, settings, keyboard and responsive views (1.1s)
+  ✓  2 tests/browser/app.spec.js:43:1 › mock serial integration: telemetry, six commands, stale, clear and reconnect (7.1s)
+  ✓  3 tests/browser/app.spec.js:78:1 › unsupported browser explains limitations (303ms)
+  ✓  4 tests/browser/app.spec.js:84:1 › chooser cancellation is recoverable and does not claim a connection (423ms)
+
+  4 passed (10.7s)
