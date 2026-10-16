@@ -13,3 +13,8 @@ DEPLOYMENT NOT_STARTED
 Skills read: lovable-web-factory, brainstorming, writing-plans, test-driven-development, frontend-design, ui-ux-pro-max, vercel-react-best-practices, github, executing-plans. Semgrep CLI missing; no cloud scan authorized; use dependency audit + manual source review, record limitation. Impeccable missing; browser-based visual checks used, not claimed as that skill. New-logo, authentication, server/database/payment scans N/A.
 
 Candidate fingerprint: evidence/source-hashes.json. 18 unit and 4 browser tests pass; zero npm audit advisories. Original preserved. Local app verified, physical hardware untested. Systematic-debugging and verification-before-completion applied.
+
+GITHUB PASS: main pushed; e883d1d app commit verified remotely.
+LOVABLE_PREVIEW PASS: exact five core files, browser smoke-tested; evidence/lovable-parity.json and LOVABLE_HANDOFF.md.
+GITHUB_TWO_WAY_SYNC NOT_STARTED: platform does not import existing repos.
+DEPLOYMENT NOT_STARTED: production is not published; preview exists.

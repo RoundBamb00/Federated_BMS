@@ -78,3 +78,9 @@ npm audit
 Lovable 官方不支持直接导入已有 GitHub 仓库。当前流程是先验证并推送这里的网页源码，再把相同源码交给 Lovable 创建项目。源码复制不等于 GitHub 双向同步；双向同步需要在 Lovable 项目的 Git 设置中配置其管理的仓库。不要删除或覆盖现有源仓库来绕过这个限制。
 
 官方文档：https://docs.lovable.dev/integrations/github
+
+Lovable 编辑器：https://lovable.dev/projects/6133d5d1-f4d4-4cbb-b261-9b3b14a11557
+
+Lovable 预览：https://id-preview--6133d5d1-f4d4-4cbb-b261-9b3b14a11557.lovable.app
+
+当前状态：预览已核验，未公开发布，未配置 GitHub 双向同步。详情见 `docs/web-factory/LOVABLE_HANDOFF.md`。

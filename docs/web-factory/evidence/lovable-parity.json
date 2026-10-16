@@ -1,0 +1,27 @@
+{
+  "source_commit": "e883d1d237fe5e12cca63dc86f1ddc1a30bbf07b",
+  "lovable_commit": "a7500042649c191aa57bde3f432b4daea71a38a6",
+  "project_id": "6133d5d1-f4d4-4cbb-b261-9b3b14a11557",
+  "core_files": {
+    "src/App.jsx": {
+      "identical": true,
+      "sha256": "e349f16816182f99355b15296d2fa9296567531b051ad1ed1f3eb6920e8300b1"
+    },
+    "src/styles.css": {
+      "identical": true,
+      "sha256": "7f9016c9c451f83f9d47f2bbe77163210c2f8d9d6567b052818ec3e61c6924ba"
+    },
+    "src/i18n.js": {
+      "identical": true,
+      "sha256": "a4700ac14cbdaff62330b75d21fe57a7da093f9ecfac35123e10e03bc5071261"
+    },
+    "src/protocol.js": {
+      "identical": true,
+      "sha256": "d557eabc49d9ce7ad8dcf83544dcbe0808b0a75d47d5db881e36319dd9825aa6"
+    },
+    "src/serial.js": {
+      "identical": true,
+      "sha256": "e224e33cb48bb1de53eae162887a151e82e42b681a2d3fea8ba740af4625517a"
+    }
+  }
+}

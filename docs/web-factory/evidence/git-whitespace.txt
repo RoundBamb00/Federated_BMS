@@ -1,0 +1,1 @@
+e883d1d237fe5e12cca63dc86f1ddc1a30bbf07b feat: port 24S BMS serial GUI to browser dashboard

@@ -5,8 +5,8 @@
 - [x] 18 unit tests, 4 Chrome browser scenarios, production build pass.
 - [x] Desktop/mobile screenshots inspected; npm audit zero; source boundary review done.
 - [x] README includes installation, protocol, commands and limitations.
-- [ ] GitHub remote hash verification.
-- [ ] Lovable project import/preview verification.
+- [x] GitHub remote hash verification.
+- [x] Lovable source copy/preview verification; see LOVABLE_HANDOFF.md.
 - [ ] Published production URL smoke test.
 
 Run: npm ci --ignore-scripts; npm run dev. No hardware testing claimed.
